@@ -13,7 +13,7 @@ router.post("/add", (req, res) => {
   const body = req.body;
   // console.log(req.body);
   const newPlayers = new Players(body);
-  newTodo
+  newPlayers
     .save()
     .then((t) => res.status(200).json(t))
     .catch((err) => console.log(err));
